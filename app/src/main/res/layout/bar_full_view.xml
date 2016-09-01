@@ -6,8 +6,8 @@
     android:fitsSystemWindows="true"
     tools:context="com.haurentziu.helios.MainActivity">
 
+    <include layout="@layout/content_full_view"/>
     <include layout = "@layout/bar" />
 
-    <include layout="@layout/content_full_view"/>
 
 </android.support.design.widget.CoordinatorLayout>

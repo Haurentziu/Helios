@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "sunLinks">
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0193.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0304.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0171.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0211.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0131.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0335.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0094.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_1600.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_1700.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/f_211_193_171_%s.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/f_304_211_171_%s.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/f_094_335_193_%s.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/f_HMImag_171_%s.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_HMIB.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_HMIBC.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_HMIIC.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_HMIIF.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_HMII.jpg</item>
+        <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_HMID.jpg</item>
+        <item>http://sohowww.nascom.nasa.gov/data/realtime/eit_171/%s/latest.jpg</item>
+        <item>http://sohowww.nascom.nasa.gov/data/realtime/eit_195/%s/latest.jpg</item>
+        <item>http://sohowww.nascom.nasa.gov/data/realtime/eit_284/%s/latest.jpg</item>
+        <item>http://sohowww.nascom.nasa.gov/data/realtime/eit_304/%s/latest.jpg</item>
+        <item>http://sohowww.nascom.nasa.gov/data/realtime/c2/%s/latest.jpg</item>
+        <item>http://sohowww.nascom.nasa.gov/data/realtime/c3/%s/latest.jpg</item>
+    </string-array>
+
+    <string-array name = "names">
+        <item>AIA 193</item>
+        <item>AIA 304</item>
+        <item>AIA 171</item>
+        <item>AIA 211</item>
+        <item>AIA 131</item>
+        <item>AIA 335</item>
+        <item>AIA 94</item>
+        <item>AIA 1600</item>
+        <item>AIA 1700</item>
+        <item>AIA 211, 193, 171</item>
+        <item>AIA 304, 211, 171</item>
+        <item>AIA 94, 335, 193</item>
+        <item>AIA 171 &amp; HMIB</item>
+        <item>HMI Magnetogram</item>
+        <item>HMI Colorized Magnetogram</item>
+        <item>HMI Intensitygram - Colored</item>
+        <item>HMI Intensitygram - Flattened</item>
+        <item>HMI Intensitygram</item>
+        <item>HMI Dopplergram</item>
+        <item>EIT 171</item>
+        <item>EIT 195</item>
+        <item>EIT 284</item>
+        <item>EIT 304</item>
+        <item>LASCO C2</item>
+        <item>LASCO C3</item>
+    </string-array>
+
+    <string-array name = "full_screen_resolutions">
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>2048</item>
+        <item>1024</item>
+        <item>1024</item>
+        <item>1024</item>
+        <item>1024</item>
+        <item>1024</item>
+        <item>1024</item>
+    </string-array>
+
+</resources>

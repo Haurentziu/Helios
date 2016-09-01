@@ -1,9 +1,11 @@
 package com.haurentziu.helios;
 
+import android.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
-import com.ortiz.touch.TouchImageView;
 import com.squareup.picasso.Picasso;
+import uk.co.senab.photoview.PhotoView;
 
 public class FullViewActivity extends BaseActivity {
 
@@ -15,10 +17,19 @@ public class FullViewActivity extends BaseActivity {
 
         Bundle extras = getIntent().getExtras();
         String url = extras.getString("url");
+        String name = extras.getString("name");
 
-        TouchImageView touchImageView = (TouchImageView) findViewById(R.id.touchView);
-        touchImageView.setMaxZoom(999999);
+        PhotoView touchImageView = (PhotoView) findViewById(R.id.view);
         Picasso.with(this).load(url).into(touchImageView);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setSubtitle(name);
+
+    }
+
+    @Override
+    public void onBackPressed(){
+        this.finish();
     }
 
 }

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Helios</string>
+    <string name = "subtitle">Pocket Sun Observatory</string>
+    <string name = "market_link">https://play.google.com/store/apps/details?id=com.haurentziu.helios&amp;hl=en</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

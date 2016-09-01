@@ -1,5 +1,6 @@
 package com.haurentziu.helios;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -19,14 +20,16 @@ public class BaseActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        /*NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);*/
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -56,7 +59,10 @@ public class BaseActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent(this, FullViewActivity.class);
+            intent.putExtra("url", "http://i.imgur.com/x6cUbEh.jpg");
+            intent.putExtra("name", "UAIE");
+            this.startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -68,22 +74,41 @@ public class BaseActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_archive) {
+            Intent intent = new Intent(this, FullViewActivity.class);
+            intent.putExtra("url", "http://theawesomedaily.com/wp-content/uploads/2014/01/tumblr_inline_mmb9fhWEWX1qz4rgp.png");
+            intent.putExtra("name", "UAIE");
+            this.startActivity(intent);
+        }
+        else if (id == R.id.nav_timelapse) {
+            Intent intent = new Intent(this, FullViewActivity.class);
+            intent.putExtra("url", "http://i.imgur.com/kKHhiEy.jpg");
+            intent.putExtra("name", "Mike Tyson");
+            this.startActivity(intent);
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_settings) {
+            Intent intent = new Intent(this, FullViewActivity.class);
+            intent.putExtra("url", "http://i.imgur.com/37m5Ger.jpg");
+            intent.putExtra("name", "Albert Einstein");
+            this.startActivity(intent);
 
         } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            share();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+
+    public void share(){
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        String message = getResources().getString(R.string.market_link);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, message);
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
     }
 }
