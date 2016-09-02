@@ -70,7 +70,6 @@ public class SunThumbnail extends RelativeLayout implements OnClickListener{
     }
 
 
-
     @Override
     public void onClick(View view){
         Intent intent = new Intent(getContext(), FullViewActivity.class);

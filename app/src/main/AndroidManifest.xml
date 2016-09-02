@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".FullViewActivity"></activity>
+        <activity android:name=".ArchiveActivity"></activity>
     </application>
 
 </manifest>

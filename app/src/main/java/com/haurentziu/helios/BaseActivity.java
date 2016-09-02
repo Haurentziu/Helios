@@ -75,10 +75,10 @@ public class BaseActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_archive) {
-            Intent intent = new Intent(this, FullViewActivity.class);
-            intent.putExtra("url", "http://theawesomedaily.com/wp-content/uploads/2014/01/tumblr_inline_mmb9fhWEWX1qz4rgp.png");
-            intent.putExtra("name", "UAIE");
+            Intent intent = new Intent(this, ArchiveActivity.class);
+            intent.putExtra("url", getResources().getStringArray(R.array.sources)[0]);
             this.startActivity(intent);
+
         }
         else if (id == R.id.nav_timelapse) {
             Intent intent = new Intent(this, FullViewActivity.class);

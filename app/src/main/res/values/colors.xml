@@ -2,8 +2,15 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#3F51B5</color>
-    <color name="colorDarkAccent">#3949AB</color>
+
+    <color name="colorAccent">#546E7A</color>
+    <color name="colorDarkAccent">#37474F</color>
+    <color name="separatorColor">#A0A0A0</color>
+    <color name="selectedColor">#2e2e2e</color>
+
+    <!--<color name="colorAccent">#3F51B5</color>
+    <color name="colorDarkAccent">#3949AB</color> -->
     <color name="darkBackground">#000000</color>
-    <color name="text_background">#c2000000</color>
+    <color name="text_background">#D4181818</color>
+    <!-- <color name="text_background">#D60d0726</color> -->
 </resources>
