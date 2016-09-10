@@ -76,11 +76,11 @@ public class BaseActivity extends AppCompatActivity
 
         if (id == R.id.nav_archive) {
             Intent intent = new Intent(this, ArchiveActivity.class);
-            intent.putExtra("url", getResources().getStringArray(R.array.sources)[0]);
+            //intent.putExtra("url", getResources().getStringArray(R.array.satellites_sources)[0]);
             this.startActivity(intent);
 
         }
-        else if (id == R.id.nav_timelapse) {
+        /*else if (id == R.id.nav_timelapse) {
             Intent intent = new Intent(this, FullViewActivity.class);
             intent.putExtra("url", "http://i.imgur.com/kKHhiEy.jpg");
             intent.putExtra("name", "Mike Tyson");
@@ -92,7 +92,7 @@ public class BaseActivity extends AppCompatActivity
             intent.putExtra("name", "Albert Einstein");
             this.startActivity(intent);
 
-        } else if (id == R.id.nav_share) {
+        }*/ else if (id == R.id.nav_share) {
             share();
         }
 
@@ -101,7 +101,24 @@ public class BaseActivity extends AppCompatActivity
         return true;
     }
 
+    protected void changeSubtitle(String subs){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setSubtitle(subs);
+    }
 
+    protected void changeTitle(String title){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle(title);
+    }
+
+    protected void changeTitleAndSubtitles(String title, String subs){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setSubtitle(subs);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(title);
+
+    }
 
     public void share(){
         Intent sendIntent = new Intent();

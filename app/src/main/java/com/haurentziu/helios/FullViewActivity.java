@@ -1,9 +1,6 @@
 package com.haurentziu.helios;
 
-import android.app.ActionBar;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 
 import com.squareup.picasso.Picasso;
 import uk.co.senab.photoview.PhotoView;
@@ -15,16 +12,17 @@ public class FullViewActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_view);
         createBarAndDrawer();
+        getWindow().getDecorView().setBackgroundColor(getResources().getColor(R.color.darkBackground));
 
         Bundle extras = getIntent().getExtras();
         String url = extras.getString("url");
         String name = extras.getString("name");
+        String title = extras.getString("title");
 
         PhotoView touchImageView = (PhotoView) findViewById(R.id.view);
-        Picasso.with(this).load(url).into(touchImageView);
+        Picasso.with(this).load(url).placeholder(getResources().getDrawable(R.drawable.loading_image)).into(touchImageView);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setSubtitle(name);
+        super.changeTitleAndSubtitles(title, name);
 
     }
 

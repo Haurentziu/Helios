@@ -24,7 +24,7 @@ public class SunThumbnail extends RelativeLayout implements OnClickListener{
     String name;
     String fullSize;
 
-    public SunThumbnail(Context c, String url, String name, String fullSize){
+    public SunThumbnail(Context c, String url, String name, String minSize, String fullSize){
         super(c);
         this.url = url;
         this.name = name;
@@ -75,6 +75,7 @@ public class SunThumbnail extends RelativeLayout implements OnClickListener{
         Intent intent = new Intent(getContext(), FullViewActivity.class);
         intent.putExtra("url", String.format(url, fullSize));
         intent.putExtra("name", name);
+        intent.putExtra("title", getResources().getString(R.string.latest_image));
         getContext().startActivity(intent);
     }
 }

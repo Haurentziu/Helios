@@ -16,6 +16,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         createBarAndDrawer();
         createGUI();
+        getWindow().getDecorView().setBackgroundColor(getResources().getColor(R.color.darkBackground));
 
     }
 
@@ -24,6 +25,7 @@ public class MainActivity extends BaseActivity {
         LinearLayout currentHorizontal = createHorizontalLayout();
         String urls[] = getResources().getStringArray(R.array.sunLinks);
         String names[] = getResources().getStringArray(R.array.names);
+        String minSizes[] = getResources().getStringArray(R.array.minimum_resolutions);
         String fullSizes[] = getResources().getStringArray(R.array.full_screen_resolutions);
         int n = 0;
 
@@ -34,7 +36,7 @@ public class MainActivity extends BaseActivity {
                 n = 0;
             }
 
-            SunThumbnail thumb = new SunThumbnail(this, urls[i], names[i], fullSizes[i]);
+            SunThumbnail thumb = new SunThumbnail(this, urls[i], names[i], minSizes[i], fullSizes[i]);
 
             currentHorizontal.addView(thumb);
 

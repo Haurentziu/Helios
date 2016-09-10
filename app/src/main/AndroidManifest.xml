@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".FullViewActivity"></activity>
         <activity android:name=".ArchiveActivity"></activity>
+        <activity android:name=".ArchiveBrowser"></activity>
+        <dialog android:name=".ArchiveDatePicker"></dialog>
     </application>
 
 </manifest>

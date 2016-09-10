@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="sources">
-        <item>http://sdo.gsfc.nasa.gov/assets/img/browse/</item>
+    <!--    <string-array name="satellites_sources">
+            <item>http://sdo.gsfc.nasa.gov/assets/img/browse/%s/%s/%s</item>
+        </string-array>
+
+        <string-array name = "satellites_name">
+            <item>SDO</item>
+        </string-array>-->
+
+        <string-array name = "instrument_names">
+            <item>AIA 193</item>
+            <item>AIA 304</item>
+            <item>AIA 171</item>
+            <item>AIA 211</item>
+            <item>AIA 131</item>
+            <item>AIA 335</item>
+            <item>AIA 94</item>
+            <item>AIA 1600</item>
+            <item>AIA 1700</item>
+            <item>AIA 211, 193, 171</item>
+            <item>AIA 304, 211, 171</item>
+            <item>AIA 94, 335, 193</item>
+            <item>AIA 171 &amp; HMIB</item>
+            <item>HMI Magnetogram</item>
+            <item>HMI Colorized Magnetogram</item>
+            <item>HMI Intensitygram - Colored</item>
+            <item>HMI Intensitygram - Flattened</item>
+            <item>HMI Intensitygram</item>
+            <item>HMI Dopplergram</item>
+        </string-array>
+
+        <string-array name = "instrument_links">
+            <item>0193</item>
+            <item>0304</item>
+            <item>0171</item>
+            <item>0211</item>
+            <item>0131</item>
+            <item>0335</item>
+            <item>0094</item>
+            <item>1600</item>
+            <item>1700</item>
+            <item>211193171</item>
+            <item>304211171</item>
+            <item>094335193</item>
+            <item>HMI171</item>
+            <item>HMIB</item>
+            <item>HMIBC</item>
+            <item>HMIIC</item>
+            <item>HMIIF</item>
+            <item>HMII</item>
+            <item>HMID</item>
+        </string-array>
+
+    <string-array name="resolutions">
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>4096</item>
     </string-array>
+
 
     <string-array name = "sunLinks">
         <item>http://sdo.gsfc.nasa.gov/assets/img/latest/latest_%s_0193.jpg</item>
@@ -52,6 +108,7 @@
         <item>HMI Intensitygram - Flattened</item>
         <item>HMI Intensitygram</item>
         <item>HMI Dopplergram</item>
+
         <item>EIT 171</item>
         <item>EIT 195</item>
         <item>EIT 284</item>
@@ -86,6 +143,34 @@
         <item>1024</item>
         <item>1024</item>
         <item>1024</item>
+    </string-array>
+
+    <string-array name = "minimum_resolutions">
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>256</item>
+        <item>512</item>
+        <item>512</item>
+        <item>512</item>
+        <item>512</item>
+        <item>512</item>
+        <item>512</item>
     </string-array>
 
 </resources>
